@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping card</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-XspwIOkJ7j7lIly6liwBDnTbgTKJDMj14z-havuQub1daSvqBC5kkGJ9lD1L73H24Hg&usqp=CAU">
+            <div class="model">Pulsar</div><br>
+            <div class="rate">Price:100$</div><br>
+            <button class="cart" onclick="myFunction()">Add to cart</button>
+
+        </div>
+
+
+        <div class="box">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_yWs3oRRviGEoEKxu7yFkqMCTjgFf0y6Qd1YOh8SyngtMqlMgQdKcLczPk2xZyPjuRe0&usqp=CAU">
+            <div class="model">BMW</div><br>
+            <div class="rate">Price:200$</div><br>
+            <button class="cart" onclick="secFunction()">Add to cart</button>
+
+        </div>
+
+        <div class="box">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKt8W0p9kUAEY3npkB8Y9IYISgR0UfMajyzPFE8ovGDwU-BZFBoQ5X4N4A9rnJCosqm5E&usqp=CAU">
+            <div class="model">RR</div><br>
+            <div class="rate">Price:300$</div><br>
+
+            <button class="cart" onclick="thirdFunction()">Add to cart</button>
+        </div>
+
+
+        <div id="store">
+            <div class="title">CART</div><br>
+            <div id="here"></div>
+            <div id="here1"></div>
+            <div id="here2"></div>
+            <div id="total"></div>
+
+        </div>
+    </div> -->
+    <script>
+        var addItemId = 0;;
+        function myFunction() {
+            addItemId += 1;
+            document.getElementsByClassName("cart");
+            document.getElementById("here").innerHTML = "Pulser - 100$";
+        
+        }
+        function secFunction() {
+            document.getElementsByClassName("cart");
+            document.getElementById("here1").innerHTML = "BMW - 200$";
+         
+        }
+        function thirdFunction() {
+            document.getElementsByClassName("cart");
+            document.getElementById("here2").innerHTML = "RR - 300$";
+         
+        }
+
+    </script>
+
+</body>
+
+</html>
